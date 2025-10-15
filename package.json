@@ -1,7 +1,7 @@
 {
   "name": "try-expo",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -14,5 +14,9 @@
     "react": "19.1.0",
     "react-native": "0.81.4"
   },
+  "workspaces": [
+    "src/packages/*",
+    "aws-amplify"
+  ],
   "private": true
 }
