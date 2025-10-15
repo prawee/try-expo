@@ -17,3 +17,9 @@ yarn build:ios || yarn run build:ios
 yarn build:android || yarn run build:android
 yarn build:web || yarn run build:web || npx expo export -p web
 ```
+
+## Doctor
+
+```sh
+npx expo-doctor
+```
