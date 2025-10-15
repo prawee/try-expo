@@ -2,24 +2,31 @@
 
 This is a test project for Expo.
 
+## Install
+
+```sh
+yarn || yarn install
+npx pod-install
+```
+
+## Doctor and Checking
+
+```sh
+npx expo-doctor
+npx expo install --check
+```
+
 ## Start
 
-```bash
-yarn || yarn install
+```sh
 yarn start || yarn run start
 yarn web || yarn run web || npx expo serve
 ```
 
 ## Build
 
-```bash
+```sh
 yarn build:ios || yarn run build:ios
 yarn build:android || yarn run build:android
 yarn build:web || yarn run build:web || npx expo export -p web
-```
-
-## Doctor
-
-```sh
-npx expo-doctor
 ```
