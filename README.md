@@ -9,3 +9,10 @@ yarn || yarn install
 yarn start || yarn run start
 yarn web || yarn run web
 ```
+
+## Build
+
+```bash
+yarn build:ios || yarn run build:ios
+yarn build:android || yarn run build:android
+```
