@@ -7,7 +7,7 @@ This is a test project for Expo.
 ```bash
 yarn || yarn install
 yarn start || yarn run start
-yarn web || yarn run web
+yarn web || yarn run web || npx expo serve
 ```
 
 ## Build
