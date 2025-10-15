@@ -1,6 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Button, View } from "react-native";
-// import { SafeAreaView } from "react-native-safe-area-context";
+import { SafeAreaProvider } from "react-native-safe-area-context";
 
 import { Amplify } from "aws-amplify";
 import { Authenticator, useAuthenticator } from "@aws-amplify/ui-react-native";
@@ -24,10 +24,10 @@ export const App = () => {
     return (
         <Authenticator.Provider>
             <Authenticator>
-                <View style={styles.container}>
+                <SafeAreaProvider style={styles.container}>
                     <SignOutButton />
                     <TodoList />
-                </View>
+                </SafeAreaProvider>
             </Authenticator>
         </Authenticator.Provider>
     );
@@ -36,7 +36,7 @@ export const App = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        padding: 2,
+        padding: 8,
     },
     signOutButton: {
         alignSelf: "flex-end",
